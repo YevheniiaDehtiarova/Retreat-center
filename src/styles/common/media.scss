@@ -1,0 +1,50 @@
+@media (max-width:821px) {
+
+    .slick-slide {
+        display: flex !important;
+        height: 100%;
+        min-height: 1px;
+    }
+
+    .slick-slide .slick-current .slick-active,
+    .slick-initialized .slick-slide {
+        width: 95% !important;
+        padding: 0 10px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+
+    .header__content {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+
+        &--title {
+            font-size: 40px;
+            line-height: 66px;
+            word-wrap: break-word;
+            display: inline;
+            width: 85%;
+        }
+
+        &--descr {
+            width: 100%;
+            padding: 150px 20px 50px 20px;
+
+        }
+
+        &--picture {
+            width: 55%;
+        }
+
+        &--text {
+            margin: 50px auto;
+            text-align: center;
+        }
+    }
+}

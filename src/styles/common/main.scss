@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+button,
+a {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+a:hover {
+    transform: scale(1.05);
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    border-bottom: 1px solid black;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: $font-regular;
+}
+
+ul {
+    display: block;
+}
+
+.descr__title {
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: calc($top-indent / 4);
+    line-height: 16px;
+}
+
+.descr__text {
+    max-width: 668px;
+    width: 100%;
+    margin: calc($top-indent / 3) 0;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc($top-indent / 3);
+}
+
+.section__descr {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__container {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    min-height: 90px;
+    justify-content: space-between;
+    align-items: center;
+
+    &--descr {
+        margin-left: calc($top-indent/2);
+        font-family: $font-main;
+        font-weight: 700;
+        line-height: calc($top-indent / 3);
+        font-size: calc($top-indent/4);
+        color: #fff;
+    }
+
+    &--mail {
+        font-family: $font-main;
+        font-weight: 400;
+        line-height: calc($top-indent / 3);
+        font-size: 16px;
+        color: #fff;
+        margin-right: calc($top-indent/2);
+    }
+}
+
+.hidden{
+    display: none;
+}

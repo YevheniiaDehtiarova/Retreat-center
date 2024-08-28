@@ -1,0 +1,32 @@
+{
+    "name": "test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^5.0.0",
+        "gulp-autoprefixer": "^9.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-iconfont": "^10.0.3",
+        "gulp-iconfont-css": "^3.0.0",
+        "gulp-minify": "^3.1.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-uglify": "^2.1.2",
+        "gulp-watch": "^5.0.1",
+        "lodash": "^4.17.20",
+        "sass": "^1.77.8"
+    },
+    "dependencies": {
+        "animate.css": "^4.1.1",
+        "gulp-sass": "^5.1.0",
+        "slick": "^1.12.2",
+        "slick-slider": "^1.8.2"
+    },
+    "type": "module"
+}
