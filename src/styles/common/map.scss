@@ -1,0 +1,58 @@
+.map{
+    background: $beige-bg;
+    padding: 120px;
+    margin: 0 auto;
+
+    &__title{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+           width: 124px;    
+           height: 124px;
+           margin-bottom: 24px;
+        }
+
+        p{
+            text-align: center;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: $dark-brown;
+            margin-bottom: 24px;
+        }
+    }
+    &__text{
+        text-align: center;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 60px;
+        padding: 0 12%;
+        color: $dark-brown;
+        margin-bottom: 64px;
+    }
+    &__buttons{
+        text-align: center;
+        padding: 0 12%;
+        margin-bottom: 40px;
+
+        button{
+            padding: 16px 48px;
+            border: 1px solid $dark-brown;
+            color: $dark-brown;
+            text-transform: uppercase;
+            margin-right: 20px;
+            margin-bottom: 24px;
+            background-color: $beige-bg;
+
+            &.active{
+                background-color: $color-light;
+            }
+        }
+    }
+    &__banner{
+        width: 100%;
+    }
+}
