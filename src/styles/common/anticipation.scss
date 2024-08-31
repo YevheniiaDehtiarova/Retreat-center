@@ -1,0 +1,94 @@
+.anticipation {
+    padding: 120px 84px;
+    background: $color-light;
+
+
+    &__slider {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    
+
+        .slick-arrow{
+            width: 36px;
+            height: 36px;
+            &.prev{
+              margin-right: 8px;
+              position: absolute;
+              top: 0;
+              right: 44px;
+            }
+            &.next{
+               position: absolute;
+               top: 0;
+               right: 0;
+            }
+        }
+
+        &-slide {
+            display: flex !important;
+            justify-content: space-between;
+        
+
+            .left {
+                flex: 1 1 40%;
+                margin-right: 5%;
+
+                img {
+                    width: 420px;
+                    height: 530px;
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                color: $dark-brown;
+                position: relative;
+
+
+                .subtitle {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    margin-bottom: 48px;
+                }
+
+                .title {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+
+                .banner {
+                    font-weight: 400;
+                    font-size: 120px;
+                    line-height: 132px;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.slick-slide {
+    display: flex !important;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-slide .slick-current {
+    display: flex;
+}
