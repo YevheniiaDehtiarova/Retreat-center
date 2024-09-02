@@ -1,0 +1,95 @@
+.ceremonies {
+    padding: 120px 84px;
+    background: $beige-bg;
+
+    &__container {
+        margin-bottom: 120px;
+
+        &-title {
+            text-transform: uppercase;
+            font-size: 64px;
+            font-weight: 400;
+            line-height: 76.8px;
+            text-align: left;
+            color: $dark-brown;
+            margin-bottom: 24px;    
+        }
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 48px;
+
+            &-text {
+                flex: 0 0 65%;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28.8px;
+                text-align: left;
+                color: $dark-brown;
+            }
+
+                &-buttons {
+                    display: flex;
+                    align-items: center;
+
+                    .video {
+                        margin-right: 20px;
+                        padding: 9px 36px;
+                        display: flex;
+                        align-items: center;
+                        background-color: $color-light;
+                        color: $dark-brown;
+
+                        span {
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 22.4px;
+                            text-align: left;
+                        }
+
+                        img {
+                            width: 36px;
+                            height: 36px;
+                        }
+
+                    }
+
+                    .donate {
+                        color: $dark-brown;
+                        color: $color-light;
+                        background: $dark-brown;
+                        padding: 9px 36px;
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 22.4px;
+                        }
+
+                        img {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+    }
+    &__content{
+        display: flex;
+    
+        
+        &-left, &-center{
+         flex: 0 0 10%;
+         margin-right: 24px;
+        }
+        &-right{ 
+            img{
+                width: 100%;
+                height: 100%
+            }
+        }
+    }
+    }
