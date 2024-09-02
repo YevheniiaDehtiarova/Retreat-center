@@ -72,6 +72,26 @@
             }
         }
     }
+
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-top: 180px;
+    }
+    
+    .tab {
+        padding: 10px 20px;
+        color: $text-pink;
+        cursor: pointer;
+        border-top: 1px solid $text-pink;
+        padding-top: 24px;
+    }
+    
+    .tab.active {
+        color: $dark-red;
+        border-top: 1px solid $dark-red;
+    }
 }
 
 .slick-slide {
@@ -92,3 +112,4 @@
 .slick-slide .slick-current {
     display: flex;
 }
+

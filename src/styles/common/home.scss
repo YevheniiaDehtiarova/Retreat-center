@@ -1,0 +1,107 @@
+.home {
+    background: url(src/assets/img/home-bg.png) no-repeat center left;
+    height: 100vh;
+    position: relative;
+
+    &__container {
+        padding: 42px 84px;
+        display: flex;
+        justify-content: space-between;
+
+        &-left {
+            flex: 0 0 40%;
+
+            &-title {
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 60px;
+                letter-spacing: -0.03em;
+                text-align: left;
+                color: $color-light;
+            }
+
+            &-subtitle {
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 53px;
+                letter-spacing: -0.03em;
+                text-align: left;
+                color: $color-light;
+                opacity: 0.5;
+
+            }
+        }
+
+        &-right {
+            flex: 0 0 50%;
+
+            &-text {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 28.8px;
+                text-align: left;
+                color: $color-light;
+                margin-bottom: 48px;
+            }
+
+            &-buttons {
+                display: flex;
+                align-items: center;
+
+                .video {
+                    margin-right: 20px;
+                    padding: 9px 36px;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid $color-light;
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22.4px;
+                        text-align: left;
+                        color: $color-light;
+                    }
+
+                    img {
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                }
+
+                .donate {
+                    color: $dark-brown;
+                    border: 1px solid $dark-brown;
+                    background-color: $color-light;
+                    padding: 9px 36px;
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22.4px;
+                    }
+
+                    img {
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+            }
+
+        }
+    }
+    &__gallery{
+        position: absolute;
+        left: 84px;
+        bottom: 36px;
+        display: flex;
+        img{
+            margin-right: 12px;
+            width: 212px;
+            height: 134px;
+        }
+    }
+}
