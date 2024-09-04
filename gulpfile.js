@@ -6,14 +6,15 @@ import watch from 'gulp-watch';
 import iconfont from 'gulp-iconfont';
 import iconfontCss from 'gulp-iconfont-css';
 import gulpSass from 'gulp-sass';
-import sass from 'sass';
+import * as sass from 'sass';
 
-// Set the compiler to Dart Sass
+
+
 const sassCompiler = gulpSass(sass);
 
 const fontName = 'icons';
 
-// Styles (compressed, autoprefixer)
+
 gulp.task('style', function () {
     return gulp.src('src/styles/style.scss')
         .pipe(sassCompiler({ outputStyle: 'compressed' }).on('error', sassCompiler.logError))
@@ -30,13 +31,11 @@ gulp.task('watch', function () {
 
 gulp.task('default', gulp.series('style'));
 
-// Icon fonts
+
 gulp.task('iconfont', function () {
     return gulp.src('src/assets/icons/*.svg')
         .pipe(iconfontCss({
-            // Path where our scss file will be
             targetPath: '../../styles/common/_icons.scss',
-            // Path to fonts in _icons.scss
             fontPath: 'src/assets/fonts/',
             fontName: fontName
         }))

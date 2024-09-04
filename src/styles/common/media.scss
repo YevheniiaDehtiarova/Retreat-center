@@ -1,5 +1,4 @@
-@media (max-width:821px) {
-
+@media screen and (max-width: 821px) {
     .slick-slide {
         display: flex !important;
         height: 100%;
@@ -18,33 +17,63 @@
         }
     }
 
-
-    .header__content {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-
-        &--title {
-            font-size: 40px;
-            line-height: 66px;
-            word-wrap: break-word;
-            display: inline;
-            width: 85%;
+    .header {
+        &__button-wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+        &__menu{
+            padding-top: 0;
         }
 
-        &--descr {
-            width: 100%;
-            padding: 150px 20px 50px 20px;
 
+        &__content {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+
+            &--title {
+                font-size: 40px;
+                line-height: 66px;
+                word-wrap: break-word;
+                display: inline;
+                width: 85%;
+            }
+
+            &--descr {
+                width: 100%;
+                padding: 150px 20px 50px 20px;
+
+            }
+
+            &--picture {
+                width: 55%;
+            }
+
+            &--text {
+                margin: 50px auto;
+                text-align: center;
+            }
         }
+    }
+}
 
-        &--picture {
-            width: 55%;
+
+@media screen and (max-width: 1025px) {
+    .header{
+        &__content{
+            height: auto;
+            padding: 150px 50px;
+            h1{
+              font-size: 120px;
+            }
         }
+    }
 
-        &--text {
-            margin: 50px auto;
-            text-align: center;
+    .map {
+        padding: 60px;
+        &__text{
+            padding: 0;
         }
     }
 }
