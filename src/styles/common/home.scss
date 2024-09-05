@@ -105,3 +105,12 @@
         }
     }
 }
+
+@media screen and (max-width: 1025px) {
+    .home{
+        height: 60vh;
+        &__gallery{
+            flex-wrap: wrap;
+        }
+    }
+}

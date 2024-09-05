@@ -113,3 +113,25 @@
     display: flex;
 }
 
+@media screen and (max-width: 1025px) {
+    .anticipation{
+        &__slider-slide{
+            flex-direction: column;
+            .left{
+                flex: 1 1 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .right{
+               margin-top: 50px;
+               .banner{
+                bottom: 10px;
+                font-size: 30px;
+               }
+            }
+        }
+    }
+}
+

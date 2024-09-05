@@ -100,3 +100,27 @@
         }
     }
 }
+@media screen and (max-width: 1025px) {
+    .ceremonies{
+        padding: 60px 22px;
+        &__container-header{
+            flex-direction: column;
+            margin-bottom: 50px;
+
+            &-text{
+                margin-bottom: 24px;
+            }
+        }
+        &__content{
+            flex-wrap: wrap;
+            &-left, &-center{
+                flex: 1 1 50%;
+                margin-right: 0;    
+                margin-bottom: 24px;
+            }
+            &-right{
+                flex: 0 0 95%;
+            }
+        }
+    }
+}
