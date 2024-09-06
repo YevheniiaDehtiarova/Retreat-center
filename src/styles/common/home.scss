@@ -114,3 +114,16 @@
         }
     }
 }
+
+@media screen and (max-width: 821px) {
+    .home{
+        height: 80vh;
+
+        &__container{
+            padding: 21px 42px;
+        }
+        &__gallery{
+            flex-wrap: wrap;
+        }
+    }
+}

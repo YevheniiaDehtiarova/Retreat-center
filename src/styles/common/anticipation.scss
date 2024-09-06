@@ -115,6 +115,8 @@
 
 @media screen and (max-width: 1025px) {
     .anticipation{
+        padding: 60px 42px;
+        
         &__slider-slide{
             flex-direction: column;
             .left{

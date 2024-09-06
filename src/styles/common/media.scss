@@ -4,7 +4,6 @@
         height: 100%;
         min-height: 1px;
     }
-
     .slick-slide .slick-current .slick-active,
     .slick-initialized .slick-slide {
         width: 95% !important;
@@ -16,57 +15,7 @@
             max-width: 100%;
         }
     }
-
-    .header {
-        &__button-wrapper{
-            display: flex;
-            flex-direction: column;
-        }
-        &__menu{
-            padding-top: 0;
-        }
-
-
-        &__content {
-            display: flex;
-            flex-wrap: wrap-reverse;
-            justify-content: center;
-
-            &--title {
-                font-size: 40px;
-                line-height: 66px;
-                word-wrap: break-word;
-                display: inline;
-                width: 85%;
-            }
-
-            &--descr {
-                width: 100%;
-                padding: 150px 20px 50px 20px;
-
-            }
-
-            &--picture {
-                width: 55%;
-            }
-
-            &--text {
-                margin: 50px auto;
-                text-align: center;
-            }
-        }
-    }
 }
 
 
-@media screen and (max-width: 1025px) {
-    .header{
-        &__content{
-            height: auto;
-            padding: 150px 50px;
-            h1{
-              font-size: 120px;
-            }
-        }
-    }
-}
+

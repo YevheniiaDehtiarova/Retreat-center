@@ -124,3 +124,33 @@
         }
     }
 }
+
+
+@media screen and (max-width: 821px) {
+    .ceremonies{
+        &__container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            &-title,&-header-text{
+                text-align: center;
+            }
+            &-header-buttons{
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &__content {
+            &-left, &-center{ 
+                flex: 1 1 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+        }
+        &-right{
+            flex: 0 0 100%;
+        }
+    }
+}}

@@ -87,6 +87,7 @@ footer {
 .footer-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 20px;
     font-size: 14px;
     width: 70%;
@@ -120,8 +121,8 @@ footer {
     }
 
     .footer-picture {
-        right: -100px;
-        bottom: -120px;
+        right: 0;
+        bottom: -200px;
         top: auto;
     }
 
