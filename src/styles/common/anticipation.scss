@@ -8,28 +8,30 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-    
 
-        .slick-arrow{
+
+        .slick-arrow {
             width: 36px;
             height: 36px;
-            &.prev{
-              margin-right: 8px;
-              position: absolute;
-              top: 0;
-              right: 44px;
+
+            &.prev {
+                margin-right: 8px;
+                position: absolute;
+                top: 0;
+                right: 44px;
             }
-            &.next{
-               position: absolute;
-               top: 0;
-               right: 0;
+
+            &.next {
+                position: absolute;
+                top: 0;
+                right: 0;
             }
         }
 
         &-slide {
             display: flex !important;
             justify-content: space-between;
-        
+
 
             .left {
                 flex: 1 1 40%;
@@ -79,7 +81,7 @@
         margin-top: 20px;
         margin-top: 180px;
     }
-    
+
     .tab {
         padding: 10px 20px;
         color: $text-pink;
@@ -87,7 +89,7 @@
         border-top: 1px solid $text-pink;
         padding-top: 24px;
     }
-    
+
     .tab.active {
         color: $dark-red;
         border-top: 1px solid $dark-red;
@@ -114,26 +116,47 @@
 }
 
 @media screen and (max-width: 1025px) {
-    .anticipation{
+    .anticipation {
         padding: 60px 42px;
-        
-        &__slider-slide{
+
+        &__slider-slide {
             flex-direction: column;
-            .left{
+
+            .left {
                 flex: 1 1 100%;
-                img{
+
+                img {
                     width: 100%;
                     height: 100%;
                 }
             }
-            .right{
-               margin-top: 50px;
-               .banner{
-                bottom: 10px;
-                font-size: 30px;
-               }
+
+            .right {
+                margin-top: 50px;
+
+                .banner {
+                    bottom: 10px;
+                    font-size: 30px;
+                }
             }
         }
     }
 }
 
+@media screen and (max-width: 576px) {
+    .anticipation {
+        padding: 25px;
+
+        &__slider-slide {
+            .right {
+                .banner {
+                    bottom: 70px;
+                }
+            }
+        }
+        &__tabs{
+            flex-direction: column;
+            margin-top: 100px;
+        }
+    }
+}

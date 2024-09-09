@@ -141,3 +141,23 @@ footer {
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 576px) {
+    footer {
+        padding: 25px;
+
+        .footer-picture {
+            bottom: -150px;
+            right: -25px;
+
+            img {
+                width: 225px;
+                height: 225px;
+            }
+        }
+        .footer-bottom{
+            align-items: flex-start;
+            width: 100%;
+        }
+    }
+}

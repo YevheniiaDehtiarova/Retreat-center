@@ -26,47 +26,69 @@
             text-align: left;
         }
     }
-    &__buttons{
-       position: absolute;
-       bottom: 120px;
-       right: 84px;
-       display: flex;
-       justify-content: space-between;
 
-       &-button{
-        background-color: $color-light;
-        color: $dark-brown;
-        padding: 9px 36px;
-        margin-right: 8px;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-between;
-        align-items: center;
+    &__buttons {
+        position: absolute;
+        bottom: 120px;
+        right: 84px;
         display: flex;
+        justify-content: space-between;
 
-        img{
-            width: 36px;
-            height: 36px;
+        &-button {
+            background-color: $color-light;
+            color: $dark-brown;
+            padding: 9px 36px;
+            margin-right: 8px;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+
+            img {
+                width: 36px;
+                height: 36px;
+            }
+
+            span {
+                text-transform: uppercase;
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 400;
+            }
         }
-        span{
-            text-transform: uppercase;
-            font-size: 16px;
-            line-height: 22px;
-            font-weight: 400;
-        }
-       }
     }
 }
 
 @media screen and (max-width: 1025px) {
-    .place{
+    .place {
         height: 60vh;
-        &__header{
+
+        &__header {
             flex-direction: column;
-            &-subtitle{
+
+            &-subtitle {
                 margin-top: 50px;
             }
         }
     }
 }
 
+@media screen and (max-width: 576px) {
+    .place {
+        height: 100vh;
+
+        &__header {
+            padding: 25px;
+
+            &-title {
+                font-size: 32px;
+                margin-right: 0;
+            }
+        }
+        &__buttons{
+            right: 16px;
+            bottom: 116px;
+        }
+    }
+}

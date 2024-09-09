@@ -93,12 +93,14 @@
 
         }
     }
-    &__gallery{
+
+    &__gallery {
         position: absolute;
         left: 84px;
         bottom: 36px;
         display: flex;
-        img{
+
+        img {
             margin-right: 12px;
             width: 212px;
             height: 134px;
@@ -107,23 +109,49 @@
 }
 
 @media screen and (max-width: 1025px) {
-    .home{
+    .home {
         height: 60vh;
-        &__gallery{
+
+        &__gallery {
             flex-wrap: wrap;
         }
     }
 }
 
 @media screen and (max-width: 821px) {
-    .home{
+    .home {
         height: 80vh;
 
-        &__container{
+        &__container {
             padding: 21px 42px;
         }
-        &__gallery{
+
+        &__gallery {
             flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home {
+        height: 120vh;
+
+        &__container {
+            flex-direction: column;
+
+            &-left-title,
+            &-left-subtitle {
+                font-size: 25px;
+            }
+
+            &-right-text {
+                font-size: 12px;
+            }
+        }
+        &__gallery{
+            bottom: 25px;
+            left: 25px;
+            flex-direction: row;
         }
     }
 }

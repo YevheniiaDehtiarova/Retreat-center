@@ -49,7 +49,19 @@
 }
 
 @media screen and (max-width: 1025px) {
-    .help{
+    .help {
         height: 60vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .help {
+        height: 100vh;
+
+        &__container {
+            &-title {
+                font-size: 32px;
+            }
+        }
     }
 }
