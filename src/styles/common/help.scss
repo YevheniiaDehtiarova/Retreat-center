@@ -35,6 +35,10 @@
             text-align: center;
             margin: 0 auto;
 
+            &:hover{
+                cursor: pointer;
+            }
+
             span {
                 text-transform: uppercase;
 

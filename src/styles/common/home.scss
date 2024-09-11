@@ -55,6 +55,10 @@
                     align-items: center;
                     border: 1px solid $color-light;
 
+                    &:hover{
+                        cursor: pointer;
+                    }
+
                     span {
                         font-size: 16px;
                         font-weight: 400;
@@ -77,6 +81,10 @@
                     padding: 9px 36px;
                     display: flex;
                     align-items: center;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
 
                     span {
                         font-size: 16px;
@@ -149,9 +157,7 @@
             }
         }
         &__gallery{
-            bottom: 25px;
-            left: 25px;
-            flex-direction: row;
+            display: none;
         }
     }
 }

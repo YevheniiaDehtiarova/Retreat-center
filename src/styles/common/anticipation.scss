@@ -14,17 +14,29 @@
             width: 36px;
             height: 36px;
 
+            &:hover{
+                cursor: pointer;
+            }
+
             &.prev {
                 margin-right: 8px;
                 position: absolute;
                 top: 0;
                 right: 44px;
+
+                &:hover{
+                    cursor: pointer;
+                }
             }
 
             &.next {
                 position: absolute;
                 top: 0;
                 right: 0;
+
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
 

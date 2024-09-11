@@ -46,6 +46,12 @@ ul {
     display: block;
 }
 
+button, a{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
 .descr__title {
     font-family: $font-main;
     font-weight: 700;
